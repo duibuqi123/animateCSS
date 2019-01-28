@@ -1,0 +1,375 @@
+@import 'nib'
+
+.clearfix
+  zoom 1
+  &:after
+    content ""
+    height 0
+    line-height 0
+    display block
+    visibility hidden
+    clear both
+input, textarea
+  border: none
+  outline: none
+  resize: none
+
+body, html
+  min-width 1200px
+  margin: 0 auto
+  overflow-x hidden
+
+#fullpage
+  margin 0
+  padding 0
+
+p
+  margin 0
+  padding 0
+
+#menu
+  top 0
+  left 0
+  right 0
+  position fixed
+  list-style-type none
+  z-index 70
+  height 100px
+  width 100%
+  transition all 1s
+  .middle
+    width 1200px
+    margin 0 auto
+    overflow hidden
+    div
+      width 1200px
+      display table-cell
+      vertical-align middle
+      height 100px
+  img
+    position relative
+    display inline-block
+  ul
+    height 53px
+    float right
+    display inline-block
+  li
+    float left
+    margin-left 40px
+    font-size 14px
+    list-style none
+  a
+    float left
+    display inline-block
+    width 120px
+    height 53px
+    color #fff
+    text-decoration none
+    font-size 20px
+    text-align center
+    line-height 53px
+  .active
+    background url(../img/selectnav.png)
+    background-size 100%
+
+.light_active
+  background rgba(0, 0, 0, .8)
+
+.section
+  text-align center
+  font "Microsoft Yahei"
+  color #fff
+  position relative
+  .scale-box
+    background-size cover
+  &:nth-of-type(1)
+    .scale-box
+      background url(../img/bg_1.png) no-repeat
+      height 1080px
+  &:nth-of-type(2)
+    .scale-box
+      height 756px
+      background url(../img/bg_2.png) no-repeat
+      padding-top 40px
+  &:nth-of-type(3)
+    .scale-box
+      height 701px
+      background url(../img/bg_3.png) no-repeat
+  &:nth-of-type(4)
+    .scale-box
+      height 853px
+      background url(../img/bg_4.png) no-repeat
+  &:nth-of-type(5)
+    .scale-box
+      height 701px
+      background url(../img/bg_5.png) no-repeat
+      color #2B0900
+      .line_title
+        background #2B0900
+
+.first_index
+  width 1200px
+  padding-top 100px
+  margin 0 auto 100px
+
+.third_index,
+.four_index,
+.five_index,
+.six_index
+  width 1200px
+  margin 0 auto
+  padding: 50px 0
+
+.six_left_index,
+.six_right_index
+  float left
+  width 50%
+  color #333
+  font-size 18px
+  margin-top 60px
+  text-align left
+
+.six_right_index
+  width 480px !important
+  float right 
+
+.six_left_index
+  .title_name
+    font-size 20px
+  p
+    margin-bottom 30px
+
+.six_right_index
+  margin-top 80px
+  width 30%
+  p
+    margin-bottom 15px
+    height 50px
+    &:nth-of-type(4)
+      height 100px
+      border-bottom 1px solid #eee
+      textarea
+        height 90%
+        display block
+        width 100%
+
+.six_right_index p:nth-of-type(1),
+.six_right_index p:nth-of-type(2)
+  border-bottom 1px solid #eee
+
+.six_right_index input,
+.six_right_index textarea
+  border none
+  width 70%
+  height 90%
+  float right
+
+.footer
+  width 100%
+  height 151px
+  text-align center
+  line-height 151px
+  font-size 18px
+  color #8F8F8F
+  background #212121
+
+.first_left_index
+  width 45%
+  margin-top 80px
+  float left
+
+.summit
+  background linear-gradient(left, #FFED68, #FCDF0A)
+  border-radius 5px
+  width 100%
+  height 50px !important
+  text-align center
+  line-height 50px
+  font-size 20px
+  color #2B0900
+  background-size cover
+  margin-top 30px
+  user-select none
+
+.third_left_index
+  float left
+  width 30%
+
+.first_right_index,
+.third_right_index
+  float right
+  width 50%
+
+.line_title
+  width 70px
+  height 8px
+  background white
+  display block
+  margin-bottom 10px
+
+.title_name
+  font-size 48px
+  text-align left
+
+.title_content
+  font-size 18px
+  text-align left
+
+.erweima
+  display block
+  margin-top 10px
+
+.title_share
+  font-size 24px
+  text-align left
+  .line_title
+    width 23px
+    height 5px
+
+.title_shares
+  font-size 16px
+  text-align left
+  margin-bottom 20px
+
+.do_img
+  display block
+  margin-bottom 30px
+
+.four_index
+  ul
+    overflow hidden
+    margin-right -50px
+    margin-top 130px
+  li
+    margin 0
+    padding 0
+    float left
+    list-style none
+    width 221px
+    height 235px
+    margin-right 20px
+    background-size cover
+    text-align center
+    color #666
+    font-size 14px
+    position relative
+    .line-title
+      width 13px
+      height 3px
+      background #666
+      position absolute
+      bottom 20px
+      left 102px
+    p
+      width 160px
+      margin 0 auto
+    .four_title_name
+      font-size 20px
+      margin-top 10px
+      margin-bottom 20px
+    &:nth-of-type(1)
+      background url(../img/best_1.png)
+    &:nth-of-type(2)
+      background url(../img/best_2.png)
+    &:nth-of-type(3)
+      background url(../img/best_3.png)
+    &:nth-of-type(4)
+      background url(../img/best_4.png)
+    &:nth-of-type(5)
+      background url(../img/best_5.png)
+  img
+    margin-top 40px
+
+.five_right_index,
+.five_center_index,
+.five_left_index,
+.five_right_indexs
+  float left
+
+.five_left_index
+  width 33%
+
+.five_right_index
+  width 26%
+
+.five_center_index
+  width 28%
+  margin-top 15%
+  p
+    &:nth-of-type(2)
+      margin-top 80px
+
+.five_right_indexs
+  width 13%
+  margin-top 25%
+
+.about
+  position relative
+  top -80px
+
+.miyuan
+  display block
+  margin-bottom 20px
+
+.active
+  .mobole_img
+    margin-left 25px
+    opacity 1
+  .first_left_index
+    margin-left 25px
+    opacity 1
+  li
+    &:nth-of-type(1)
+      opacity 1
+      margin-top 80px
+    &:nth-of-type(2)
+      opacity 1
+      margin-top 80px
+      margin-left 250px
+    &:nth-of-type(3)
+      opacity 1
+      margin-top 80px
+      margin-left 500px
+    &:nth-of-type(4)
+      opacity 1
+      margin-top 80px
+      margin-left 750px
+    &:nth-of-type(5)
+      opacity 1
+      margin-top 80px
+      margin-left 1000px
+  .active017
+    opacity 1
+    margin-left 20px
+  .active018
+    opacity 1
+    margin-left 20px
+  .active019
+    opacity 1
+    margin-left 10px
+  .do_img_phone
+    margin-left 25px
+    opacity 1
+  .mobilecenter
+    opacity 1
+  .do_img
+    opacity 1
+    margin-top 80px
+  .title_share
+    opacity 1
+    margin-top 10px
+
+@media (min-width: 1200px) and (max-width: 1400px)
+  #menu
+    a
+      font-size 16px
+
+@media (min-width: 1401px) and (max-width: 1610px)
+  #menu
+    a
+      font-size 18px
+
+
+.height
+  width 100%
+  height 100%

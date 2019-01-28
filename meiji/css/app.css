@@ -1,0 +1,282 @@
+.text-center {
+  text-align: center;
+}
+.pl-10 {
+  padding-left: 1rem;
+}
+.pr-10 {
+  padding-right: 1rem;
+}
+.imgblock {
+  width: 100%;
+  display: block;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #1a1a1a;
+}
+header img {
+  width: 12rem;
+  display: inline-block;
+}
+header button {
+  outline: none;
+  background: none;
+  border: none;
+}
+header button span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  position: relative;
+  border-radius: 1px;
+  background-color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header button span + span {
+  margin-top: 4px;
+}
+header button .icon-bar:nth-child(2):before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header button.toggle .icon-bar:nth-child(1),
+header button.toggle .icon-bar:nth-child(3) {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+header button.toggle .icon-bar:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header button.toggle .icon-bar:nth-child(2):before {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+header nav {
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1) !important;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  background: #1a1a1a;
+  display: none;
+}
+header nav ul {
+  padding: 0.5rem 1.25rem 0;
+}
+header nav li {
+  height: 5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+main {
+  padding-top: 5rem;
+}
+.section6 .form {
+  padding: 0 5%;
+}
+.section6 .form .btn {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #2b0900;
+  border-radius: 0.3rem;
+  background: -webkit-linear-gradient(left, #ffed68, #fcdf0a);
+  background: -moz-linear-gradient(left, #ffed68, #fcdf0a);
+  background: -o-linear-gradient(left, #ffed68, #fcdf0a);
+  background: -ms-linear-gradient(left, #ffed68, #fcdf0a);
+  background: linear-gradient(to right, #ffed68, #fcdf0a);
+  margin-bottom: 5rem;
+}
+.section6 .form label {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  height: 3rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.section6 .form label span {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 8em;
+  -ms-flex: 0 0 8em;
+  flex: 0 0 8em;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.section6 .form input {
+  outline: none;
+  border: none;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 1.3rem;
+  color: #333;
+}
+.section6 .form span {
+  font-size: 1.3rem;
+  color: #333;
+  display: block;
+  padding-top: 0.65rem;
+  margin-bottom: 1rem;
+}
+.section6 .form textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 8rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color: #333;
+  border-radius: 0;
+}
+footer {
+  height: 4.5rem;
+  background: #212121;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #8f8f8f;
+  font-size: 1rem;
+}
+.updatebtn {
+  position: relative;
+}
+.updatebtn:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+}

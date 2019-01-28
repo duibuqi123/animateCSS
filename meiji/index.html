@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>蜜源</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<script>
+		function browserRedirect() {
+			var sUserAgent = navigator.userAgent.toLowerCase();
+			var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+			var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+			var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+			var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+			var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+			var bIsAndroid = sUserAgent.match(/android/i) == "android";
+			var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+			var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+			if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+				window.location.replace('app.html')
+			} else {
+			}
+		}
+		browserRedirect();
+	</script>
+	<link rel="shortcut icon" href="img/icon.png">
+	<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+	<div id="menu">
+		<div class="middle">
+			<div>
+				<img src="img/logo.png" />
+				<ul>
+					<li class="active">
+						<a href="#page1" data-index='0'>首页</a>
+					</li>
+					<li>
+						<a href="#page2" data-index='1'>关于我们</a>
+					</li>
+					<li>
+						<a href="#page3" data-index='2'>赚钱模式</a>
+					</li>
+					<li>
+						<a href="#page4" data-index='3'>我们的优势</a>
+					</li>
+					<li>
+						<a href="#page5" data-index='4'>市场愿景</a>
+					</li>
+					<li>
+						<a href="#page6" data-index='5'>联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="fullpage">
+
+		<div class="section">
+			<div class="first scale-box">
+				<div class="first_index clearfix">
+					<div class="first_left_index">
+						<p class="title_img animated wow swing">
+							<img class="miyuan" src="img/miyuan.png" />
+						</p>
+						<p class="title_name animated wow bounceInLeft">
+							<img src="img/miyuan_title.png" />
+						</p>
+						<p class="title_content animated wow bounceInLeft">
+							<img src="img/miyuan_wenzi.png" />
+						</p>
+						<p class="wow bounceInLeft">
+							<img class="erweima" src="img/erweima.png" />
+						</p>
+					</div>
+					<div class="first_right_index animated wow bounceInRight">
+						<img class="mobole_img" src="img/miyuan_phone.png" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="section">
+			<div class="scale-box">
+				<div class="animated wow tada">
+					<img src="img/about_us.png" class="title_img_line" />
+				</div>
+			</div>
+		</div>
+		<div class="section ">
+			<div class="third scale-box">
+				<div class="third_index clearfix">
+					<div class="third_left_index">
+						<p class="title_img wow bounceInDown" data-wow-delay=".1s">
+							<img src="img/do_money.png" style="margin-left: -7px" class="do_img" />
+						</p>
+						<div class="title_share wow bounceInLeft" data-wow-delay=".3s">
+							<img src="img/third_img.png" alt="">
+						</div>
+					</div>
+					<div class="third_right_index wow bounceInRight" data-wow-delay=".5s">
+						<img class="do_img_phone" src="img/do_money_phone.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="four scale-box">
+				<div class="four_index clearfix">
+					<p class="title_img">
+						<img src="img/best_title.png" class="best_img  title_img_line wow bounceInDown" />
+					</p>
+					<ul>
+						<li class="wow rollIn" data-wow-delay='.1s'>
+							<img src="img/icon1.png" />
+							<p class="four_title_name">技术优势</p>
+							<img style="margin-top: 0;" src="img/message1.png" alt="">
+							<p class="line-title"></p>
+						</li>
+						<li class="wow rollIn" data-wow-delay='.3s'>
+							<img src="img/icon2.png" />
+							<p class="four_title_name">产品甄选</p>
+							<img style="margin-top: 0;" src="img/message2.png" alt="">
+							<p class="line-title"></p>
+						</li>
+						<li class="wow rollIn" data-wow-delay='.5s'>
+							<img src="img/icon3.png" />
+							<p class="four_title_name">形象提炼</p>
+							<img style="margin-top: 0;" src="img/message3.png" alt="">
+							<p class="line-title"></p>
+						</li>
+						<li class="wow rollIn" data-wow-delay='.7s'>
+							<img src="img/icon4.png" />
+							<p class="four_title_name">服务配套</p>
+							<img style="margin-top: 0;" src="img/message4.png" alt="">
+							<p class="line-title"></p>
+						</li>
+						<li class="wow rollIn" data-wow-delay='.9s'>
+							<img src="img/icon5.png" />
+							<p class="four_title_name">团队运作</p>
+							<img style="margin-top: 0;" src="img/message5.png" alt="">
+							<p class="line-title"></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="five scale-box">
+				<div class="five_index clearfix">
+					<div class="five_left_index">
+						<p class="title_img  wow fadeInLeft">
+							<img src="img/wish.png" style="margin-left: -7px" class="do_img" />
+						</p>
+						<div class="title_share  wow fadeInLeft" data-wow-delay=".3s">
+							<img src="img/wish_message.png" alt="">
+						</div>
+					</div>
+					<div class="five_center_index">
+						<p class="active017 wow fadeInUp" data-wow-delay=".6s">
+							<img src="img/2017.png" />
+						</p>
+						<p class="active018 wow fadeInDown" data-wow-delay=".7s">
+							<img src="img/2018.png" />
+						</p>
+					</div>
+					<div class="five_right_index wow zoomIn" data-wow-delay=".5s">
+						<p class="mobilecenter">
+							<img src="img/wish_phone.png" />
+						</p>
+					</div>
+					<div class="five_right_indexs wow bounceInRight" data-wow-delay=".8s">
+						<p class="active019">
+							<img src="img/2019.png" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="six scale-box">
+				<div class="six_index clearfix" style="margin-top: 0;padding-top: 50px;padding-bottom: 150px;">
+					<p class="title_img">
+						<img src="img/contact_us.png" class="contact_img  title_img_line wow bounceIn" />
+					</p>
+					<div class="six_left_index">
+						<p class="title_name">蜜源（广州）新媒体科技有限公司</p>
+						<p>QQ：1245639914</p>
+						<p>微信：my77874</p>
+						<p>email：miyuanguangzhou@163.com</p>
+						<p>地址：广州市白云区嘉禾街望岗大道自编88号4012房</p>
+						<p>
+							<img src="img/erweima.png" style="margin-left: -10px;" />
+							<span class="about">扫一扫，了解更多</span>
+						</p>
+					</div>
+					<div class="six_right_index">
+						<p>
+							<span style="position: relative;top: 14px;">姓名/Name</span>
+							<input type="text" style="color: #333;" class='username' name="username" id="" />
+						</p>
+						<p>
+							<span style="position: relative;top: 14px;">电话/Tel</span>
+							<input class='telphone' type="text" style="color: #333;" maxlength='11' onblur="check(this)" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" name="telphone" id="" />
+						</p>
+						<p style="height: 30px;margin-top: 10px; line-height: 30px;">意见/Option</p>
+						<p>
+							<textarea  class='message 'name="" rows="" cols="" style="font-size: 18px;color: #333;font-weight: bold;"></textarea>
+						</p>
+						<p class="summit" style="cursor: pointer;">
+							提交
+						</p>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="scale-box">ICP备案号:粤ICP备18016919号</div>
+		</div>
+	</div>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript">
+	function check(e) {
+		var re = /^\d+(?=\.{0,1}\d+$|$)/
+		if(e.value != "") {
+			if(!re.test(e.value)) {
+				api.toast({
+					msg: "请输入正确的数字"
+				})
+				e.value = "";
+				e.focus();
+			}
+		}
+	}
+	function init() {
+		var scale = 1;
+		var maxWidth = 1910;
+		curHeight = [];
+		var currentWidth = $(window).innerWidth() < 1200 ? 1200 : $(window).innerWidth();
+		scale = parseFloat(currentWidth / maxWidth).toFixed(2);
+		for (var x = 0; x < $('.scale-box').length; x++) {
+			$('.scale-box').eq(x).css({
+				zoom: scale
+			})
+		}
+		scrollLenth = $('.section').length;
+		var h = -100;
+		curHeight.push(h)
+		for (var i = 0; i < scrollLenth; i++) {
+			h += $('.section').eq(i).innerHeight();
+			curHeight.push(h)
+		}
+		curHeight.push(30000);
+		new WOW().init({ offset: 50 })
+	}
+
+	init();
+	$(function () {
+
+		// 提交按钮
+		$('.summit').on('click', function (e) {
+			e.preventDefault();
+			var username = $('.username').val();
+			var telphone = $('.telphone').val();
+			if ( username == '' ) {
+				alert('姓名不能为空');
+				return false;
+			}
+			if ( telphone == '' || !(telphone.match(/^1[34578]\d{9}$/)) ) {
+				alert('请输入正确的电话！')
+				return false;
+			}
+		})
+		
+		// 导航栏按钮
+		$('#menu li a').click(function (e) {
+			e.preventDefault();
+			var i = $(this).data('index');
+			$('body,html').animate({
+				scrollTop: curHeight[i]
+			}, 600, function () {
+				flag = true;
+			})
+		})
+
+		$(window).scroll(function (event) {
+			var windStop = $(this).scrollTop();
+			if (windStop > 100) {
+				$('#menu').addClass('light_active');
+			} else {
+				$('#menu').removeClass('light_active');
+			}
+			for (var j = 0; j < curHeight.length; j++) {
+				var h1 = curHeight[j];
+				var h2 = curHeight[j + 1];
+				if (h1 <= windStop && windStop < h2 && h2) {
+					$('#menu li').removeClass('active').eq(j).addClass('active');
+					flag = false
+					return;
+				}
+			}
+		})
+
+
+		$(window).resize(function () {
+			init();
+		})
+
+		$('.summit').on('click', function () {
+			console.log('summit');
+		})
+
+	})
+
+</script>

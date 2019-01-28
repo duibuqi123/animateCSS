@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>蜜源</title>
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <meta name="keywords" content="蜜源,蜜源官网,蜜源广州APP,广州蜜源APP,蜜源广州新媒体科技官方网站,蜜源广州新媒体科技有限公司,蜜源(广州)新媒体科技有限公司">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <script>
+    function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+      if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+      } else {
+        window.location.replace('index.html')
+      }
+    }
+    browserRedirect();
+  </script>
+  <script src="./js//flexible.js"></script>
+  <link rel="shortcut icon" href="img/icon.png">
+  <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+  <div id="app">
+    <header class="pl-10 pr-10">
+      <a class="logo">
+        <img src="./img/logo.png" alt="">
+      </a>
+      <button type="button" data-toggle='0' class="nav-btn updatebtn">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <nav>
+        <ul>
+          <li data-index='0'>首页</li>
+          <li data-index='1'>关于我们</li>
+          <li data-index='2'>赚钱模式</li>
+          <li data-index='3'>我们的优势</li>
+          <li data-index='4'>市场背景</li>
+          <li data-index='5'>联系我们</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section1">
+        <img src="./img/phone/section1_1.png" class="imgblock" alt="">
+        <img src="./img/phone/section1_2.png" class="imgblock" alt="">
+      </section>
+      <section class="section2">
+        <img src="./img/phone/section2.png" class="imgblock" alt="">
+      </section>
+      <section class="section3">
+        <img src="./img/phone/section3_1.png" class="imgblock" alt="">
+        <img src="./img/phone/section3_2.png" class="imgblock" alt="">
+      </section>
+      <section class="section4">
+        <img src="./img/phone/section4.png" class="imgblock" alt="">
+      </section>
+      <section class="section5">
+        <img src="./img/phone/section5_1.png" class="imgblock" alt="">
+        <img src="./img/phone/section5_2.png" class="imgblock" alt="">
+      </section>
+      <section class="section6">
+        <img src="./img/phone/section6.png" class="imgblock" alt="">
+        <div class="form">
+          <label>
+            <span>姓名/Name</span>
+            <input type="text" name="username" class="username">
+          </label>
+          <label>
+            <span>电话/Tel</span>
+            <input type="text" name="telphone" maxlength="11" class="telphone" onblur="check(this)" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')">
+          </label>
+          <p>
+            <span>意见/Opinion</span>
+            <textarea name="message" class="message"></textarea>
+          </p>
+          <a class="btn updatebtn">提交</a>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center">ICP备案号:粤ICP备18016919号</footer>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+  <script>
+    function check(e) {
+      var re = /^\d+(?=\.{0,1}\d+$|$)/
+      if(e.value != "") {
+        if(!re.test(e.value)) {
+          api.toast({
+            msg: "请输入正确的数字"
+          })
+          e.value = "";
+          e.focus();
+        }
+      }
+    }
+    $(function () {
+
+
+      $('.nav-btn').on('click', function (e) {
+        e.preventDefault();
+        var that = $(this);
+        if (that.attr('data-toggle') == 1) {
+          return false;
+        }
+        that.attr('data-toggle', 1);
+        that.toggleClass('toggle');
+        $('header nav').slideToggle(function () {
+          that.attr('data-toggle', 0);
+        });
+      })
+      $('.btn').on('click', function (e) {
+        e.preventDefault();
+        var username = $('.username').val();
+        var telphone = $('.telphone').val();
+        if ( username == '' ) {
+          alert('姓名不能为空');
+          return false;
+        }
+        if ( telphone == '' || !(telphone.match(/^1[34578]\d{9}$/)) ) {
+          alert('请输入正确的电话！')
+          return false;
+        }
+        
+      })
+
+      $('header nav li').click(function (e) {
+        e.preventDefault();
+        if ($(this).hasClass('active')) {
+          $('.nav-btn').trigger('click');
+          return false;
+        }
+        var index = $(this).data('index');
+        var headerH = $('header').innerHeight();
+        $('header nav li').removeClass('active').eq(index).addClass('active');
+        var h = Math.ceil($('section').eq(index).offset().top - headerH)
+        $('body,html').animate({
+          scrollTop: h
+        }, 600)
+        $('.nav-btn').trigger('click');
+      })
+    })
+  </script>
+
+</body>
+
+</html>
